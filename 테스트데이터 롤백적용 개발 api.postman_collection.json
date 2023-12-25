@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "fff97722-c7d6-4a5b-bf94-dd7b3a3d957c",
+		"name": "테스트데이터 롤백적용 개발 api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "테스트데이터적용 api",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXF1ZXN0LmdldElkKCkiLCJpYXQiOjE2NzUzMTczODAsImV4cCI6MTY3NTkyMjE4MH0.2uJycJKdetphMPEy9PKuJAafZNJMRuiXd9osLxiQrRXP1mPsWesncNkEY1WhMXS6S6QVCD80bVULt7iB8trKVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exType\": \"1\",\r\n    \"exType_testData\":\"(사용안함), exType허용값-> 1-dbms에러/2-트랜잭션에러/3-인가에러/4->사용자제어에러/5->알수없는에러\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/sample/testdata_dbunit.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"sample",
+						"testdata_dbunit.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IDS 테이블 조회 총개수",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXF1ZXN0LmdldElkKCkiLCJpYXQiOjE2NzUzMTczODAsImV4cCI6MTY3NTkyMjE4MH0.2uJycJKdetphMPEy9PKuJAafZNJMRuiXd9osLxiQrRXP1mPsWesncNkEY1WhMXS6S6QVCD80bVULt7iB8trKVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exType\": \"1\",\r\n    \"exType_testData\":\"(사용안함), exType허용값-> 1-dbms에러/2-트랜잭션에러/3-인가에러/4->사용자제어에러/5->알수없는에러\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/sample/dbcnt.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"sample",
+						"dbcnt.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dbunit 작동확인",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyZXF1ZXN0LmdldElkKCkiLCJpYXQiOjE2NzUzMTczODAsImV4cCI6MTY3NTkyMjE4MH0.2uJycJKdetphMPEy9PKuJAafZNJMRuiXd9osLxiQrRXP1mPsWesncNkEY1WhMXS6S6QVCD80bVULt7iB8trKVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exType\": \"1\",\r\n    \"exType_testData\":\"(사용안함), exType허용값-> 1-dbms에러/2-트랜잭션에러/3-인가에러/4->사용자제어에러/5->알수없는에러\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/sample/dbunit.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"sample",
+						"dbunit.do"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
